@@ -3,12 +3,52 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+             android:orientation="vertical"
              tools:context=".Profile">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hallo"
+                    android:text="Sejarah Kota Semarang"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="150dp"
+                       android:src="@drawable/tugu"
+                       android:layout_marginTop="10dp"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_weight="1"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview6"
+                    android:text="  Secara etimologis nama Semarang berasal dari kata sem yang berarti asam/pohon asam dan kata arang yang berarti jarang yang digabungkan menjadi asam yang jarang - jarang. Penamaan Semarang ini bermula ketika Ki Ageng Pandanaran I datang ke sebuah pulau bernama Pulau Tirang (dekat pelabuhan Bergota) dan melihat pohon asam yang jarang - jarang tumbuh berdekatan. Penamaan Kota Semarang ini sempat berubah saat jaman kolonialisme Hindia - Belanda menjadi Samarang. Kota Semarang merupakan satu dari tiga pusat pelabuhan (Jakarta dan Surabaya) penting bagi Hindia - Belanda sebagai pemasok hasil bumi dari wilayah pedalaman Jawa."
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </FrameLayout>

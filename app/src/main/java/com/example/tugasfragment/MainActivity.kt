@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val adapter = FragmentPagerItemAdapter(
             supportFragmentManager, FragmentPagerItems.with(this)
-                .add("First", Beranda::class.java)
-                .add("Second", Profile::class.java)
-                .add("Third", CP::class.java)
-                .add("Fourth", About::class.java)
+                .add("Beranda", Beranda::class.java)
+                .add("Sejarah", Profile::class.java)
+                .add("Wisata", CP::class.java)
+                .add("Author", About::class.java)
                 .create()
         )
 
